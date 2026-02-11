@@ -26,7 +26,7 @@ exadrums_libtool_version_info = 2:0:0
 libexadrums_la_CXXFLAGS = \
   -Wall \
   -pthread \
-  -std=c++20 $(alsa_CFLAGS) $(tinyxml2_CFLAGS) $(minizip_CFLAGS)
+  -std=c++23 $(alsa_CFLAGS) $(tinyxml2_CFLAGS) $(minizip_CFLAGS)
 libexadrums_la_LDFLAGS = \
   -Wl,--as-needed \
   -Wl,--no-allow-shlib-undefined \
@@ -52,6 +52,8 @@ libexadrums_la_SOURCES = \
   DrumKit/DrumModule/Recorder.cpp \
   DrumKit/DrumModule/Recorder.h \
   DrumKit/DrumModule/TrigSound.h \
+  DrumKit/DrumModule/MIDIProcessor.h \
+  DrumKit/DrumModule/MIDIProcessor.cpp \
   DrumKit/Instruments/Cymbals/TestHiHat.cpp \
   DrumKit/Instruments/Cymbals/TestHiHat.h \
   DrumKit/Instruments/Drums/TestDrum.cpp \
@@ -81,7 +83,10 @@ libexadrums_la_SOURCES = \
   IO/HddSensor.cpp \
   IO/HddSensor.h \
   IO/ISensor.h \
+  IO/MIDI.h \
+  IO/MIDIFactory.h \
   IO/SerialMidi.h \
+  IO/USBMIDI.h \
   IO/SpiDevices/SpiDev.cpp \
   IO/SpiDevices/SpiDev.h \
   IO/SpiDevices/SpiDevFactory.h \
@@ -144,7 +149,10 @@ nobase_pkginclude_HEADERS = \
   DrumKit/Triggers/TriggerParameters.h \
   DrumKit/Triggers/TriggerType.h \
   IO/SensorsConfig.h \
+  IO/MIDI.h \
+  IO/MIDIFactory.h \
   IO/SerialMidi.h \
+  IO/USBMIDI.h \
   IO/SpiDevices/SpiDevParameters.h \
   Sound/Alsa/AlsaParams.h \
   Sound/InstrumentSoundType.h \

@@ -1,64 +1,68 @@
-# LibeXaDrums roadmap
+# LibeXaDrums Roadmap
 
 This document outlines the development plan from a high level and will be updated as progress is made.
 
 ## Legend of annotations
 
-| Mark       | Description                     |
-| ---------- | ------------------------------- |
-| open box   | work not started - scheduled    |
-| check mark | work completed                  |
-| &#9997;    | on-going work                   |
+| Mark | Description                  |
+| ---- | ---------------------------- |
+| 🚧   | work not started - scheduled |
+| ✔️ | work completed               |
+| 📝   | on-going work                |
 
 ## Current version
 
-### 0.7.0
-
-- [X] Improve recorder stuff (auto gain, etc.).
-- [X] More generic SPI sensor reading (multiple devices, etc.).
-- [X] Improve factories
-- &#9997; Serial MIDI input support.
-- [X] Use C++20
-
 ## Future versions
-
-### 0.8.0
-
-- [ ] More trigger & instrument types.
 
 ### 0.9.0
 
-- [ ] Instrument builder.
+- 🚧 Multi-layer sounds
+- 🚧 Round-robin
+- 🚧 More trigger & instrument types.
+- 🚧 Hi-hat CC
 
 ### 1.0.0
 
 ## Documentation
 
-- [ ] Doxygen: document code.
-- [ ] API documentation.
+- 🚧 Doxygen: document code.
+- 🚧 API documentation.
 
 ## Past versions
 
+### 0.8.0
+
+- ✔️ C++23.
+- ✔️ USB MIDI input.
+
+### 0.7.0
+
+- ✔️ Improve recorder stuff (auto gain, etc.).
+- ✔️ More generic SPI sensor reading (multiple devices, etc.).
+- ✔️ Improve factories
+- ✔️ Serial MIDI input support.
+- ✔️ Use C++20
+
 ### 0.6.0
 
-- [X] Recorder export to PCM (wav).
-- [X] Simple calibration stuff.
+- ✔️ Recorder export to PCM (wav).
+- ✔️ Simple calibration stuff.
 
 ### 0.5.0
 
-- [X] Add export configuration feature.
-- [X] Add import configuration feature.
-- [X] Add GetVersion() to API.
-- [X] Document API.
-- [X] Bug fix: check if instrument's triggers exist.
-- [X] Add trigger sensitivity (gain).
-- [X] Fix trig on start bug (to be improved).
-- [X] Add rhythm coach score (done in eXaDrums directly).
-- [X] Create instrument only if enough triggers are available.
-- [X] Fix metronome volume bug.
+- ✔️ Add export configuration feature.
+- ✔️ Add import configuration feature.
+- ✔️ Add GetVersion() to API.
+- ✔️ Document API.
+- ✔️ Bug fix: check if instrument's triggers exist.
+- ✔️ Add trigger sensitivity (gain).
+- ✔️ Fix trig on start bug (to be improved).
+- ✔️ Add rhythm coach score (done in eXaDrums directly).
+- ✔️ Create instrument only if enough triggers are available.
+- ✔️ Fix metronome volume bug.
 
 ### 0.4.2
 
-- [X] Build successfully with clang++-7.
-- [X] Version.h.in instead of eXaDrums.h.in.
-- [X] Fix Readme (installation procedure -- checkout debian branch first).
+- ✔️ Build successfully with clang++-7.
+- ✔️ Version.h.in instead of eXaDrums.h.in.
+- ✔️ Fix Readme (installation procedure -- checkout debian branch first).
