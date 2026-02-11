@@ -123,20 +123,4 @@ namespace DrumKit
             volume = cymbalTriggerState.value;
         }
     }
-
-
-    std::vector<InstrumentSoundType> TestHiHat::GetSoundTypes() const
-    {
-        return { InstrumentSoundType::Default };
-    }
-
-    std::vector<TriggerLocation> TestHiHat::GetTriggersLocations() const
-    {
-        return { TriggerLocation::DrumHead, TriggerLocation::Rim };
-    }
-
-    std::vector<int> TestHiHat::GetTriggersIds() const
-    {
-        return { cymbalTrigger->GetId(), pedalTrigger->GetId() };
-    }
 } /* namespace DrumKit */
